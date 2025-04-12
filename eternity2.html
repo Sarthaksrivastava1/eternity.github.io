@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternity - Memory Preservation</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <link rel="stylesheet" href="./eternity2.css">
+</head>
+<body>
+    <div class="head">
+        <h1 class="titel">Eternity</h1>
+        <nav>
+            <a class="nav" href="eternity2.html">Home</a>
+            <a class="nav" href="news.html">News</a>
+            <a class="nav" href="#about">About us</a>
+            <a class="nav" href="about.html">about this dapp</a>
+            <a class="nav" href="use.html">How to use</a>
+        </nav>
+    </div>
+
+    <div class="content">
+        <section id="save">
+            <h3>Preserve Memory</h3>
+            <div class="input-group">
+                <input type="file" id="imageInput" accept="image/*">
+            </div>
+            <div class="input-group">
+                <input type="text" id="extraData" placeholder="Creator's Name">
+                <button onclick="saveImage()">Preserve Forever</button>
+            </div>
+        </section>
+
+        <section id="retrieve">
+            <h3>Retrieve Memory</h3>
+            <div class="input-group">
+                <input type="number" id="id" placeholder="Memory ID">
+                <button onclick="getImage()">Retrieve</button>
+            </div>
+        </section>
+
+        <section id="output">
+            <h3>Memory Output:</h3>
+            <div id="result"></div>
+            <img id="outputImage" alt="Preserved Memory">
+        </section>
+    </div>
+
+    <footer id="about">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Eternity</h3>
+                <p>We are dedicated to preserving your precious memories using blockchain technology. Our platform ensures your digital legacy remains secure and accessible for generations to come.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Guardians</h3>
+                <p>✉️ sarthaksri4349@gmail.com<br>
+                <img src="instagram (1).svg" class="img">sarthaksri_16<br>
+                <img src="instagram (1).svg" class="img">realyashhh</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js">
+    </script>
+</body>
+</html>
